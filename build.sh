@@ -20,19 +20,19 @@ do
 
     output_name=$package_name'-'$GOOS'-'$GOARCH
 
-    output_folder="build/"
-
-    output_total=$output_folder$output_name
-
     if [ $GOOS = "windows" ]; then
         output_name+='.exe'
     fi
+
+    output_folder="build/"
+
+    output_total=$output_folder$output_name
 
     echo "Building for ${GOOS} with arch ${GOARCH}"
 
     env GOOS=$GOOS GOARCH=$GOARCH go build -o $output_total $package
 
-    echo "Completed building ${output_name}"
+    echo "Completed building ${output_total}"
 
 done
 

@@ -16,3 +16,40 @@ Another way to run this script on windows, is an installation of WSL. Follow lin
 
 ## Linux
 
+Installing on linux is as simple as it can be.
+
+````
+curl -s https://api.github.com/repos/elijahcruz12/http-up/releases/latest \
+| grep "up-linux-amd64" \
+| cut -d : -f 2,3 \
+| tr -d \" \
+| wget -qi - 
+
+chmod +x up-linux-amd64
+
+sudo mv up-linux-amd64 /usr/local/bin/up
+````
+
+From here you just need to run `up` from your terminal, and you'll be able to test your internet.
+
+# Usage
+
+## Windows
+
+````
+up-windows-amd64.exe
+
+Testing your internet connection
+Internet is working
+````
+
+## Linux
+
+````
+user:group $ up
+
+Testing your internet connection
+Internet is working
+````
+
+This is currently the only this it does, however we will be adding the ability to just give `up` or `down` when calling the script, which will come in a later version.
