@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-package="main.go"
+package="up.go"
 
 package_name="up"
 
