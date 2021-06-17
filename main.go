@@ -34,7 +34,6 @@ func main() {
 }
 
 func getLongAnswer(err interface{}) {
-	fmt.Println("Testing your internet connection")
 
 	if err != nil {
 		fmt.Println("Internet is down")
