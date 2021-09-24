@@ -4,7 +4,7 @@
 
 # About
 
-This is a simple package that just tests the ability to connect to [Example.com](http://example.com). If it can't connect it tells you that your internet is down, if it connects it will say your internet is up.
+This is a simple package that just tests the ability to connect to [Google](https://google.com). If it can't connect it tells you that your internet is down, if it connects it will say your internet is up.
 
 # Installation
 
