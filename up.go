@@ -13,7 +13,7 @@ func main() {
 		Timeout: 5 * time.Second,
 	}
 
-	resp, err := client.Get("http://example.com")
+	resp, err := client.Get("http://google.com")
 
 	var first string
 
